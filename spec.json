@@ -1,0 +1,25 @@
+{
+  "proxy": {
+    "host": "127.0.0.1",
+    "port": 8080
+  },
+  "enabled_modules": [
+    "request_logger",
+    "passive_owasp_scanner"
+  ],
+  "passive_scanner": {
+    "check_security_headers": true,
+    "security_headers": [
+      "Content-Security-Policy",
+      "X-Frame-Options",
+      "Strict-Transport-Security",
+      "X-Content-Type-Options",
+      "Referrer-Policy",
+      "Permissions-Policy"
+    ],
+    "check_cookies": true
+  },
+  "logging": {
+    "log_file": "miniburp_history.log"
+  }
+}
